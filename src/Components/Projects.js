@@ -1,8 +1,6 @@
 import React from 'react'
 import { Tilt } from 'react-tilt'
-import { motion } from 'framer-motion'
 import SectionWrapper from './hoc/SectionWrapper'
-import { fadeIn, textVariant } from './utils/motion'
 import { Icon } from 'semantic-ui-react'
 
 import pepper from "../Assets/projects/pepper.png"
@@ -14,8 +12,7 @@ import skeleton from "../Assets/projects/skeleton.jpg"
 
 const ProjectCard = ({ index, name, description, tags, image, source_code_link, live_site_link }) => {
   return(
-    <motion.div variants={fadeIn("up", "spring", index * 5, 0.75)}>
-      <Tilt options={{max: 45, scale: 1, speed: 450}} className="bg-tertiary p-5 rounded-2xl xs:w-[360px] w-full">
+      <Tilt options={{max: 45, scale: 1, speed: 450}} className={`bg-tertiary p-5 rounded-2xl xs:w-[360px] w-full`}>
         <div className="relative w-full h-60">
           <img src={image} alt={name} className="w-full h-full object-cover rounded-2xl aspect-video" />
 
@@ -44,7 +41,6 @@ const ProjectCard = ({ index, name, description, tags, image, source_code_link, 
           }
         </div>
       </Tilt>
-    </motion.div>
   )
 }
 
@@ -238,22 +234,22 @@ const Projects = () => {
 
   return (
       <div className='bg-[#050816] px-10 laptop:px-36 py-10 pt-20' id="projectsComponent">
-        <motion.div variants={textVariant()}>
+        <div>
           <p className="text-tSecondary text-xl tracking-wider mb-2">MY WORK</p>
           <h2 className="text-white text-5xl font-black">Projects</h2>
-        </motion.div>
+        </div>
 
         <div className="w-full flex mt-3">
-          <motion.p variants={fadeIn("", "", 0.1, 1)} className='text-tSecondary max-w-4xl leading-7 tracking-wider text-xl'>
+          <p className='text-tSecondary max-w-4xl leading-7 tracking-wider text-xl'>
             Following projects showcase my knowledge and skills in the field. Each project is briefly described with links to project source code repositories and live demos in it. Mainly MERN Technologies are used in development of these projects.
-          </motion.p>
+          </p>
         </div>
 
         <div className="mt-20 flex flex-wrap gap-7 items-end">
           {
             projects.map((project, index) => {
               return(
-                <ProjectCard key={`project-${index}`} index={index} {...project} />
+                  <ProjectCard key={`project-${index}`} index={index} {...project} />
               )
             })
           }

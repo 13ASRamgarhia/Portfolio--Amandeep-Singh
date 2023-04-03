@@ -33,12 +33,12 @@ const Navbar = () => {
             </div>
             <div className="nav-items-div hidden laptop:flex py-4 px-3 tablet:my-auto w-full tablet:w-fit justify-center tablet:justify-end text-xl">
               <div className="nav-items flex my-auto space-x-6">
-                <AnchorLink href="#landingComponent"><p className="text-tPrimary font-monserrat hover:text-white">Home</p></AnchorLink>
-                <AnchorLink href="#aboutComponent"><p className="text-tPrimary font-monserrat hover:text-white">About</p></AnchorLink>
-                <AnchorLink href="#projectsComponent"><p className="text-tPrimary font-monserrat hover:text-white">Projects</p></AnchorLink>
-                <AnchorLink href="#experienceComponent"><p className="text-tPrimary font-monserrat hover:text-white">Experience</p></AnchorLink>
-                <AnchorLink href="#skillsComponent"><p className="text-tPrimary font-monserrat hover:text-white">Skills</p></AnchorLink>
-                <AnchorLink href="#contactComponent"><p className="text-tPrimary font-monserrat hover:text-white">Contact</p></AnchorLink>
+                <AnchorLink href="#landingComponent"><p className="text-tPrimary font-monserrat hover:text-tPrimary">Home</p></AnchorLink>
+                <AnchorLink href="#aboutComponent"><p className="text-tPrimary font-monserrat hover:text-tPrimary">About</p></AnchorLink>
+                <AnchorLink href="#projectsComponent"><p className="text-tPrimary font-monserrat hover:tetPrimaryxt-white">Projects</p></AnchorLink>
+                <AnchorLink href="#experienceComponent"><p className="text-tPrimary font-monserrat hover:text-tPrimary">Experience</p></AnchorLink>
+                <AnchorLink href="#skillsComponent"><p className="text-tPrimary font-monserrat hover:text-tPrimary">Skills</p></AnchorLink>
+                <AnchorLink href="#contactComponent"><p className="text-tPrimary font-monserrat hover:text-tPrimary">Contact</p></AnchorLink>
               </div>
             </div>
             <button onClick={() => {setIsOpen(!isOpen)}} className="flex flex-col laptop:hidden my-auto">
@@ -54,14 +54,14 @@ const Navbar = () => {
             }
             </button>
 
-            <div className={`flex laptop:hidden p-6 bg-gradient-to-r z-40 from-white/40 to-[#050816] absolute top-[4.5rem] right-0 mx-4 my-2 min-w-[7rem] rounded-xl ${isOpen ? "animate__animated animate__fadeInRight" : "animate__animated animate__fadeOutRight"}`}>
+            <div className={`flex laptop:hidden p-6 bg-tSecondary absolute top-[4.5rem] right-0 mx-4 my-2 min-w-[7rem] rounded-xl ${isOpen ? "animate__animated animate__fadeInRight" : "animate__animated animate__fadeOutRight"}`}>
               <div className="nav-items flex flex-col space-y-2">
-                  <AnchorLink href="#landingComponent" onClick={() => {setIsOpen(!isOpen)}}><p className="text-white font-monserrat">Home</p></AnchorLink>
-                  <AnchorLink href="#aboutComponent" onClick={() => {setIsOpen(!isOpen)}}><p className="text-white font-monserrat">About</p></AnchorLink>
-                  <AnchorLink href="#projectsComponent" onClick={() => {setIsOpen(!isOpen)}}><p className="text-white font-monserrat">Projects</p></AnchorLink>
-                  <AnchorLink href="#experienceComponent" onClick={() => {setIsOpen(!isOpen)}}><p className="text-white font-monserrat">Experience</p></AnchorLink>
-                  <AnchorLink href="#skillsComponent" onClick={() => {setIsOpen(!isOpen)}}><p className="text-white font-monserrat">Skills</p></AnchorLink>
-                  <AnchorLink href="#contactComponent" onClick={() => {setIsOpen(!isOpen)}}><p className="text-white font-monserrat">Contact</p></AnchorLink>
+                  <AnchorLink href="#landingComponent" onClick={() => {setIsOpen(!isOpen)}}><p className="text-tertiary font-monserrat">Home</p></AnchorLink>
+                  <AnchorLink href="#aboutComponent" onClick={() => {setIsOpen(!isOpen)}}><p className="text-tertiary font-monserrat">About</p></AnchorLink>
+                  <AnchorLink href="#projectsComponent" onClick={() => {setIsOpen(!isOpen)}}><p className="text-tertiary font-monserrat">Projects</p></AnchorLink>
+                  <AnchorLink href="#experienceComponent" onClick={() => {setIsOpen(!isOpen)}}><p className="text-tertiary font-monserrat">Experience</p></AnchorLink>
+                  <AnchorLink href="#skillsComponent" onClick={() => {setIsOpen(!isOpen)}}><p className="text-tertiary font-monserrat">Skills</p></AnchorLink>
+                  <AnchorLink href="#contactComponent" onClick={() => {setIsOpen(!isOpen)}}><p className="text-tertiary font-monserrat">Contact</p></AnchorLink>
                 </div>
             </div>
         </div>

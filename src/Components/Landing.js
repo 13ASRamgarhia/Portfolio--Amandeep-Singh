@@ -3,10 +3,13 @@ import Navbar from './Navbar'
 import Projects from './Projects'
 import Skills from './Skills'
 import Contact from './Contact'
-import Footer from './Footer'
+// import Footer from './Footer'
 import portfolioContext from '../Context/portfolioContext'
 import About from './About'
 import Experience from './Experience'
+
+import resume from "../Assets/Resume.pdf"
+import AnchorLink from 'react-anchor-link-smooth-scroll'
 
 const Landing = () => {
   document.title = "Portfolio | Amandeep Singh";
@@ -50,11 +53,17 @@ const Landing = () => {
                 </div>
 
                 <div className='space-y-5'>
-                <div className="welcomeTag font-inter flex bg-gradient-to-r from-[#1e1121] to-[#6e2f8a] w-fit py-2 px-3 border-[#fbfafd] border rounded">Welcome to my Portfolio</div>
+                  <div className="welcomeTag font-inter flex bg-gradient-to-r from-[#1e1121] to-[#6e2f8a] w-fit py-2 px-3 border-[#fbfafd] border rounded">Welcome to my Portfolio</div>
                 <div className='space-y-1'>
                   <p className="font-inter font-bold text-5xl text-tPrimary">Amandeep Singh</p>
                 </div>
-                <p className="font-inter text-xl laptop:pr-10 intro leading-7 text-tSecondary" style={{textShadow: "0px 0px 14px rgba(0,0,0,1)"}}>I am 2022 graduate BTech CSE from Maharshi Dayanand University, Rohtak. I develop web applications, backend servers, user interfaces, and 3D visuals<span className='block tablet:hidden'><br /><br /></span></p>
+                <div>
+                  <p className="font-inter text-xl laptop:pr-10 intro leading-7 text-tSecondary" style={{textShadow: "0px 0px 14px rgba(0,0,0,1)"}}>I am 2022 graduate BTech CSE from Maharshi Dayanand University, Rohtak. I develop web applications, backend servers, user interfaces, and 3D visuals</p>
+                </div>
+                <div className='flex flex-col laptop:flex laptop:flex-row my-auto space-x-0 laptop:space-x-4 space-y-4 laptop:space-y-0'>
+                    <a href={resume} download className='bg-[#6e2f8a] w-fit flex my-auto px-4 py-3 font-monserrat hover:text-current text-tPrimary focus:text-current rounded-lg hover:bg-transparent border border-[#6e2f8a] hover:transition-all hover:duration-300'>Get resume</a>
+                    <AnchorLink href="#contactComponent"><p className="text-tPrimary w-fit flex my-auto px-4 py-3 border border-[#6e2f8a] rounded-lg hover:bg-[#6e2f8a] hover:transition-all hover:duration-300 font-monserrat hover:text-tPrimary">Get in touch</p></AnchorLink>
+                  </div>
                 </div>
               </div>
             </div>
@@ -65,7 +74,7 @@ const Landing = () => {
           <Experience />
           <Skills />
           <Contact />
-          <Footer />
+          {/* <Footer /> */}
       </div>
     </>
   )

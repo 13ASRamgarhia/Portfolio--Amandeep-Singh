@@ -23,49 +23,89 @@ const Contact = () => {
       ...formData,
       [name]: value,
     });
+    }
+
+  const [nameError, setNameError] = useState("")
+  const [emailError, setEmailError] = useState("")
+  const [msgError, setMsgError] = useState("")
+  const [successMsg, setSuccessMsg] = useState("")
+
+  const formDataValidation = () => {
+    if(formData.name === ""){
+      setNameError("Please enter your name")
+      return true
+    }
+    else if(formData.name.length < 3){
+      setNameError("Please enter your full name")
+      return true
+    }
+
+    if(formData.email === ""){
+      setEmailError("Please enter your email")
+      return true   
+    }
+    else if(!(/^[a-zA-Z0-9]+@(?:[a-zA-Z0-9]+\.)+[A-Za-z]+$/.test(formData.email))){
+      setEmailError("Please enter a valid email")
+      return true
+    }
+
+    if(formData.message === ""){
+      setMsgError("Your message is empty!")
+      return true
+    }
+
+    return false
   }
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    setFormLoading(true);
+    formDataValidation();
+    if(formDataValidation()){
+      return setTimeout(() => {
+        setNameError(""); setEmailError(""); setMsgError("");
+      }, 4000)
+    }
 
-    emailjs
-      .send(
-        import.meta.env.VITE_APP_EMAILJS_SERVICE_ID,
-        import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
-        {
-          from_name: formData.name,
-          to_name: "Amandeep Singh",
-          from_email: formData.email,
-          to_email: "13asramgarhia@gmail.com",
-          message: formData.message,
-        },
-        import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
-      )
-      .then(
-        () => {
-          setFormLoading(false);
-          alert("Thank you. I will get back to you as soon as possible.");
+      setFormLoading(true);
 
-          setFormData({
-            name: "",
-            email: "",
-            message: "",
-          });
-        },
-        (error) => {
-          setFormLoading(false);
-          console.error(error);
+      emailjs
+        .send(
+          process.env.REACT_APP_SERVICE_ID,
+          process.env.REACT_APP_TEMPLATE_ID,
+          {
+            from_name: formData.name,
+            to_name: "Amandeep Singh",
+            from_email: formData.email,
+            to_email: `${process.env.REACT_APP_TO_EMAIL}`,
+            message: `"from:" ${formData.email}, "message:" ${formData.message}`,
+          },
+          process.env.REACT_APP_PUBLIC_KEY
+        )
+        .then(
+          () => {
+            setFormLoading(false);
+            setSuccessMsg("Thank you! I will get back to you as soon as possible.");
+            setTimeout(() => {setSuccessMsg("")}, 6000)
+            setFormData({
+              name: "",
+              email: "",
+              message: "",
+            });
+          },
+          (error) => {
+            setFormLoading(false);
+  
+            setSuccessMsg("Oh Snap! Something went wrong. Please try again.");
+            setTimeout(() => {setSuccessMsg("")}, 6000)
+          }
+        );
 
-          alert("Oh Snap! Something went wrong. Please try again.");
-        }
-      );
   }
 
   return (
     <div className="contact text-white" id="contactComponent">
       <div
-        className={`flex laptop:flex-row flex-col-reverse gap-10 overflow-hidden bg-[#050816] px-10 laptop:px-36 py-10 pt-20`}
+        className={`flex laptop:flex-row flex-col-reverse gap-10 overflow-hidden px-10 laptop:px-36 py-10 pt-20`}
       >
         <motion.div
           variants={slideIn("left", "tween", 0.2, 1)}
@@ -86,21 +126,24 @@ const Contact = () => {
                 name='name'
                 value={formData.name}
                 onChange={handleChange}
-                autoComplete='false'
+                autoComplete='off'
                 placeholder="What's your name?"
                 className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium'
               />
+              <p>{nameError}</p>
             </label>
             <label className='flex flex-col'>
               <span className='text-white font-medium mb-4'>Your email</span>
               <input
-                type='email'
+                type='text'
                 name='email'
                 value={formData.email}
                 onChange={handleChange}
+                autoComplete='off'
                 placeholder="What's your email address?"
                 className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium'
               />
+              <p>{emailError}</p>
             </label>
             <label className='flex flex-col'>
               <span className='text-white font-medium mb-4'>Your Message</span>
@@ -109,14 +152,16 @@ const Contact = () => {
                 name='message'
                 value={formData.message}
                 onChange={handleChange}
+                autoComplete='off'
                 placeholder='What you want to say?'
                 className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium'
               />
+              <p>{msgError}</p>
             </label>
             
-            <p>**This is service is under maintenance**</p>
+            <p>{successMsg}</p>
             <button
-              type='submit' disabled
+              type='submit'
               className='bg-tertiary py-3 px-8 rounded-xl outline-none w-fit text-white font-bold shadow-md shadow-primary'
             >
               {formLoading ? "Sending..." : "Send"}

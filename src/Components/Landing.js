@@ -3,13 +3,14 @@ import Navbar from './Navbar'
 import Projects from './Projects'
 import Skills from './Skills'
 import Contact from './Contact'
-// import Footer from './Footer'
+import Footer from './Footer'
 import portfolioContext from '../Context/portfolioContext'
 import About from './About'
 import Experience from './Experience'
 
 import resume from "../Assets/Resume.pdf"
 import AnchorLink from 'react-anchor-link-smooth-scroll'
+import StarsCanvas from './canvas/Stars'
 
 const Landing = () => {
   document.title = "Portfolio | Amandeep Singh";
@@ -73,8 +74,12 @@ const Landing = () => {
           <Projects />
           <Experience />
           <Skills />
-          <Contact />
-          {/* <Footer /> */}
+          <div className="relative z-0">
+            <Contact />
+            <StarsCanvas />
+          </div>
+          
+          <Footer />
       </div>
     </>
   )

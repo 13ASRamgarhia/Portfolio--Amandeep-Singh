@@ -17,7 +17,7 @@ const ProjectCard = ({ index, name, description, tags, image, source_code_link, 
           <img src={image} alt={name} className="w-full h-full object-cover rounded-2xl aspect-video" />
 
           <div className="absolute inset-0 flex justify-end m-3 space-x-3">
-            {live_site_link && <div className="bg-white w-10 h-10 rounded-full flex justify-center items-center cursor-pointer border border-black shadow-lg" onClick={() => {window.open(source_code_link, "_blank")}}>
+            {live_site_link && <div className="bg-white w-10 h-10 rounded-full flex justify-center items-center cursor-pointer border border-black shadow-lg" onClick={() => {window.open(live_site_link, "_blank")}}>
                 <Icon name="linkify" size="large" className='pl-1'/>
             </div>}
             {source_code_link && <div className="bg-white w-10 h-10 rounded-full flex justify-center items-center cursor-pointer border border-black shadow-lg" onClick={() => {window.open(source_code_link, "_blank")}}>

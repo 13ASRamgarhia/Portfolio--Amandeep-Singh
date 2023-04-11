@@ -6,12 +6,16 @@ import "../App.css";
 import pythonprogrammer from "../Assets/certifications/pythonprogrammer.webp"
 import fullstack from "../Assets/certifications/fullstack.webp"
 import javascript from "../Assets/certifications/javascript.webp"
+import fullstack_linkedin from "../Assets/certifications/fullstack_linkedin.png"
+import js_intermediate from "../Assets/certifications/js inter.png"
+import oop_python from "../Assets/certifications/oop_python.png"
+import nosql from "../Assets/certifications/nosql.png"
 
 const CertificationCard = ({ index, name, img, organization, date, credential }) => {
     return(
       <div className="wrapper">
         <div className="card">
-        <img src={img} alt={name} />
+        <img src={img} alt={name} className="aspect-video"/>
           <div className="info space-y-2 w-full">
             <div>
                 <h1 className='font-tahoma font-medium text-xl'>{name}</h1>
@@ -31,12 +35,40 @@ const CertificationCard = ({ index, name, img, organization, date, credential })
 
 const Certifications = () => {
     const certifications = [
+          {
+            name: "JavaScript (Intermediate)",
+            img: js_intermediate,
+            date: "Apr 2023",
+            organization: "HackerRank",
+            credential: "https://drive.google.com/file/d/17TOLDJBRb4pf2vaGWEM9-JZhNxOLCXag/view?usp=sharing"
+          },
+          {
+            name: "Learning Full-Stack JavaScript Development",
+            img: fullstack_linkedin,
+            date: "Apr 2023",
+            organization: "LinkedIn Learning",
+            credential: "https://drive.google.com/file/d/1QQ5BEG3-KRsKhTi_Br8yEgj22ggdUd8R/view?usp=sharing"
+        },
         {
             name: "Full Stack Developer Certification",
             img: fullstack,
             date: "Dec 2022",
             organization: "Board Infinity",
             credential: "https://drive.google.com/file/d/1-aHNeY9KJbSpH7OZ3VlXBFMpfDuOepbr/view?usp=sharing"
+        },
+        {
+          name: "Introduction to NoSQL Databases",
+          img: nosql,
+          date: "Nov 2022",
+          organization: "Infosys | Springboard",
+          credential: "https://drive.google.com/file/d/1FCHyA-t7XLMjxjq_z-9rR2an4y5mEQUp/view?usp=sharing"
+        },
+        {
+          name: "Object Oriented Programming using Python",
+          img: oop_python,
+          date: "Nov 2022",
+          organization: "Infosys | Springboard",
+          credential: "https://drive.google.com/file/d/1RNJDZVO8zPL8XyS_419c_1TwbyU7t1B0/view?usp=sharing"
         },
         {
             name: "JavaScript Course Completion Certification",

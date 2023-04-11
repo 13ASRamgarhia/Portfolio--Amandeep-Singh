@@ -9,6 +9,7 @@ import inotebook from "../Assets/projects/inotebook.png"
 import newssense from "../Assets/projects/newssense.png"
 import autobot from "../Assets/projects/autobot.webp"
 import skeleton from "../Assets/projects/skeleton.jpg"
+import opticesports from "../Assets/projects/opticesports.png"
 
 const ProjectCard = ({ index, name, description, tags, image, source_code_link, live_site_link }) => {
   return(
@@ -46,6 +47,28 @@ const ProjectCard = ({ index, name, description, tags, image, source_code_link, 
 
 const Projects = () => {
   const projects = [
+    {
+      name: "Optic eSports - React app",
+      description:
+        "A web application developed using create-react-app and tailwind to for an (fake) esports organisation.",
+      tags: [
+        {
+          name: "react",
+          color: "text-blue-500",
+        },
+        {
+          name: "tailwind",
+          color: "text-pink-500",
+        },
+        {
+          name: "API",
+          color: "text-gray-500",
+        },
+      ],
+      image: opticesports,
+      source_code_link: "https://optic-esports.netlify.app/",
+      live_site_link: "https://github.com/13ASRamgarhia/Optic-eSports"
+    },
     {
       name: "Random app",
       description:
@@ -89,7 +112,7 @@ const Projects = () => {
     {
       name: "iNotebook",
       description:
-        "iNotebook is a React app which is developed using MERN Technologies. This is a cloud notebook app, which can be accessed by a device with internet connection. User needs to register in order start accessing the notes. Once user is registered, he/she can just login to his/her notebook and start writing. This app is using MongoDB to store the user data and their notes. User can add a new note and delete a note.",
+        "iNotebook is a React app which is developed using MERN Technologies. This is a cloud notebook app, which can be accessed by a device with internet connection. This app is using MongoDB to store the user data and their notes. User can add a new note and delete a note.",
       tags: [
         {
           name: "react",
@@ -119,7 +142,7 @@ const Projects = () => {
     {
       name: "Notes app",
       description:
-        "Notes is a React app which is developed using MERN Technologies. This is a cloud notebook app, which can be accessed by a device with internet connection. User needs to register in order start accessing the notes. Once user is registered, he/she can just login to his/her notebook and start writing. This app is using MySQL to store the user data and their notes. User can add a new note, edit an existing note, and delete a note.",
+        "Notes is a React app which is developed using MERN Technologies. This is a cloud notebook app, which can be accessed by a device with internet connection. This app is using MySQL to store the user data and their notes. User can add a new note, edit an existing note, and delete a note.",
       tags: [
         {
           name: "react",
@@ -162,7 +185,7 @@ const Projects = () => {
     {
       name: "Autobot",
       description:
-        "AutoBot is a basic Auto-moderation Discord Bot which was developed for Project-III in 8th semester of my Bachelor's degree in Computer Science Engineering at St. Andrews Institute of Technology and Management",
+        "AutoBot is a Discord auto-moderation bot which was developed using discord.py (python) to ease the tasks of server moderators in a Discord Server.",
       tags: [
         {
           name: "python",
@@ -179,7 +202,7 @@ const Projects = () => {
     {
       name: "University Scraper",
       description:
-        "This is the very first version of Web Scraper which was developed during my internship at Connexio Inc. The project was developed for extracting the required data for the app. Later, it was submitted as Project-I in the sixth semester of my bachelor's.",
+        "This is the very first version of Web Scraper which was developed during my internship at Connexio Inc. The project was developed for extracting the required data for the app.",
       tags: [
         {
           name: "python",
@@ -204,7 +227,7 @@ const Projects = () => {
     {
       name: "Automated Attendence System",
       description:
-        "Developed an automated attendance system using Python for marking attendance using its face recognition system. As named, the aim of this project was to develop an automated attendance system to save time and prevent corruption. The project was submitted to the college as Project II in the 7th semester",
+        "Developed an automated attendance system using Python for marking attendance using its face recognition system. As named, the aim of this project was to develop an automated attendance system to save time and prevent corruption.",
       tags: [
         {
           name: "python",

@@ -10,6 +10,7 @@ import newssense from "../Assets/projects/newssense.png"
 import autobot from "../Assets/projects/autobot.webp"
 import skeleton from "../Assets/projects/skeleton.jpg"
 import opticesports from "../Assets/projects/opticesports.png"
+import weathersense from "../Assets/projects/weathersense.png"
 
 const ProjectCard = ({ index, name, description, tags, image, source_code_link, live_site_link }) => {
   return(
@@ -48,6 +49,28 @@ const ProjectCard = ({ index, name, description, tags, image, source_code_link, 
 const Projects = () => {
   const projects = [
     {
+      name: "WeatherSense",
+      description:
+        "WeatherSense is a weather app created using create-react-app, openWeatherMap API, and Tailwind CSS. The app can be used to fetch current weather for any city in the world. The amazing design and UX of the app makes it stand out.",
+      tags: [
+        {
+          name: "react",
+          color: "text-blue-500",
+        },
+        {
+          name: "tailwind",
+          color: "text-pink-500",
+        },
+        {
+          name: "API",
+          color: "text-gray-500",
+        },
+      ],
+      image: weathersense,
+      source_code_link: "https://github.com/13ASRamgarhia/WeatherSense",
+      live_site_link: "https://weather-sense.netlify.app/"
+    },
+    {
       name: "Optic eSports - React app",
       description:
         "A web application developed using create-react-app and tailwind to for an (fake) esports organisation.",
@@ -66,8 +89,8 @@ const Projects = () => {
         },
       ],
       image: opticesports,
-      source_code_link: "https://optic-esports.netlify.app/",
-      live_site_link: "https://github.com/13ASRamgarhia/Optic-eSports"
+      source_code_link: "https://github.com/13ASRamgarhia/Optic-eSports",
+      live_site_link: "https://optic-esports.netlify.app/"
     },
     {
       name: "Random app",

@@ -25,10 +25,6 @@ const JobRoleCard = ({ index, title, icon }) => {
 const About = () => {
   const jobRoles = [
     {
-      title: "Web Developer",
-      icon: web,
-    },
-    {
       title: "MERN Stack Developer",
       icon: mobile,
     },
@@ -38,6 +34,10 @@ const About = () => {
     },
     {
       title: "Backend Developer",
+      icon: web,
+    },
+    {
+      title: "Data Analyst",
       icon: creator,
     },
   ];
@@ -51,7 +51,7 @@ const About = () => {
       </motion.div>
 
       <motion.p variants={fadeIn('', '', 0.1, 1)} className='text-tSecondary max-w-4xl leading-7 tracking-wider mt-4 text-xl'>
-        I am a skilled software developer with proficiency in JavaScript and Python, and expertise in frameworks including Bootstrap, Tailwind, React, Node.js, and Next.js. I am a quick learner, possess adaptive nature, leadership qualities and abilities to work in a team effectively. Know more about my skills and projects below.
+        I am a skilled software developer with proficiency in Python and Javascript, and expertise in numerous libraries and frameworks including Numpy, Pandas, Bootstrap, Tailwind, React, Node.js, Next.js, and Selenium. I am a quick learner, possess adaptive nature, leadership qualities and abilities to work in a team effectively. Know more about my skills and projects below.
       </motion.p>
 
       <div className="mt-20 flex flex-wrap gap-10 justify-center">

@@ -14,6 +14,11 @@ import docker from "../Assets/tech/docker.png"
 import python from "../Assets/tech/python.png"
 import aws from "../Assets/tech/aws.png"
 import nextjs from "../Assets/tech/nextjs.png"
+import numpy from "../Assets/tech/numpy.svg"
+import openCV from "../Assets/tech/openCV.png"
+import mySQL from "../Assets/tech//mySQL.png"
+import pandas from "../Assets/tech/pandas.svg"
+import powerBI from "../Assets/tech/powerBI.png"
 
 const Skills = () => {
   const technologies = [
@@ -69,7 +74,27 @@ const Skills = () => {
       name: "Python",
       icon: python,
     },
-        {
+    {
+      name: "Numpy",
+      icon: numpy,
+    },
+    {
+      name: "Pandas",
+      icon: pandas,
+    },
+    {
+      name: "Power BI",
+      icon: powerBI,
+    },
+    {
+      name: "Open CV",
+      icon: openCV,
+    },
+    {
+      name: "mySQL",
+      icon: mySQL,
+    },
+    {
       name: "AWS",
       icon: aws,
     },

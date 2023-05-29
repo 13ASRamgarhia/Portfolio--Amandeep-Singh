@@ -55,9 +55,9 @@ const Experience = () => {
         date: "May 2021 - Aug 2021",
         icon: uda,
         points: [
-            "Contributed in website designing and development for an eSportsorg - Underdogs Arena",
-            "Managed ongoing tournaments using Excel programming and Discord, which involved more than 5000 eSports players",
-            "Learnt a lot of interpersonal skills, like Communication Skills, Problem Solving, Openness to feedback, and Team Work"
+            "Worked with the management team to manage large datasets using advanced Excel",
+            "Contributed to the design and development of the company website",
+            "Managed ongoing tournaments using Excel and Discord, which involved more than 5000 eSports players"
         ]
     },
     {
@@ -67,9 +67,9 @@ const Experience = () => {
         date: "Feb 2019 - Aug 2019",
         icon: connexio,
         points: [
-            "Developed a web scraper using beautifulSoup and selenium to extract the desired data for the product from the www",
             "Worked with senior developer to manage large and complex data for the product",
-            "Worked as Student Ambassador at SAITM, Gurugram"
+            "Developed a web scraper using BeautifulSoup and Selenium to automate the data collection process from www",
+            "Worked as a student ambassador at SAITM, Gurugram"
         ]
     },
   ]

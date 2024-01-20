@@ -1,0 +1,61 @@
+@tailwind base;
+html {
+    scroll-behavior: smooth;
+  }
+@tailwind components;
+@tailwind utilities;
+
+@font-face{
+    font-family: "elianto";
+    src: url("../public/Fonts/Elianto-Regular.ttf")
+}
+
+@font-face{
+    font-family: "tahoma";
+    src: url("../public/Fonts/Tahoma.ttf")
+}
+
+@font-face{
+    font-family: "sourceSansPro";
+    src: url("../public/Fonts/SourceSansPro-Black.ttf")
+}
+
+@font-face{
+    font-family: "roboto";
+    src: url("../public/Fonts/Roboto-Black.ttf")
+}
+
+@font-face{
+    font-family: "poppins";
+    src: url("../public/Fonts/Poppins-Black.ttf")
+}
+
+@font-face{
+    font-family: "nunito";
+    src: url("../public/Fonts/Nunito-VariableFont_wght.ttf")
+}
+
+@font-face{
+    font-family: "monserrat";
+    src: url("../public/Fonts/Montserrat-VariableFont_wght.ttf")
+}
+
+@font-face{
+    font-family: "manrope";
+    src: url("../public/Fonts/Manrope-VariableFont_wght.ttf")
+}
+
+@font-face{
+    font-family: "inter";
+    src: url("../public/Fonts/Inter-VariableFont_slnt.ttf")
+}
+
+@font-face{
+    font-family: "DMsans";
+    src: url("../public/Fonts/DMSans-Regular.ttf")
+}
+
+@font-face{
+    font-family: "drGlitch";
+    src: url("../public/Fonts/drGlitch.otf")
+}

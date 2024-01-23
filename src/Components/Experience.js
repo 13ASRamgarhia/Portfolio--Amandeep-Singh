@@ -66,7 +66,7 @@ const Experience = () => {
         title: "ROR Manager Intern",
         company: "Underdogs Arena",
         address: "Kanpur, UP, India",
-        date: "May 2021 - Aug 2021",
+        date: "Feb 2021 - Jan 2022",
         icon: uda,
         points: [
             "Spearheaded the management of ongoing events on both our server and client servers, ensuring seamless execution and engaging experiences for the community.",

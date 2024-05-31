@@ -12,6 +12,7 @@ import skeleton from "../Assets/projects/skeleton.jpg"
 import opticesports from "../Assets/projects/opticesports.png"
 import weathersense from "../Assets/projects/weathersense.png"
 import image_mani from "../Assets/projects/image_mani.png"
+import cinesense from "../Assets/projects/cinesense.png"
 
 const ProjectCard = ({ index, name, description, tags, image, source_code_link, live_site_link }) => {
   return(
@@ -50,6 +51,24 @@ const ProjectCard = ({ index, name, description, tags, image, source_code_link, 
 const Projects = () => {
   const projects = [
     {
+      name: "CineSense",
+      description:
+        "An AI-based Movie Recommendation System for a capestone project, developed using Python and React. The system delivers personalized movie suggestions based on user preferences.",
+      tags: [
+        {
+          name: "python",
+          color: "text-yellow-500",
+        },
+        {
+          name: "react",
+          color: "text-violet-500",
+        }
+      ],
+      image: cinesense,
+      source_code_link: "https://github.com/13ASRamgarhia/Cine-Sense",
+      live_site_link: "https://cine-sense.netlify.app/"
+    },
+    {
       name: "Image Manipulation",
       description:
         "This python project automates the extraction of data from electoral roll images by isolating individual citizen information. The script then cleans and converts each image to text (able to convert image to text in 5 languages), generating a CSV file with the resultant data.",
@@ -71,13 +90,9 @@ const Projects = () => {
           name: "python",
           color: "text-yellow-500",
         },
-        {
-          name: "discord.py",
-          color: "text-violet-500",
-        }
       ],
       image: autobot,
-      source_code_link: "https://github.com/13ASRamgarhia/AutoBot",
+      source_code_link: "https://github.com/13ASRamgarhia/Cine-Sense",
     },
     {
       name: "University (Web) Scraper",

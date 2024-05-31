@@ -63,19 +63,6 @@ const Experience = () => {
       ]
     },
     {
-        title: "ROR Manager Intern",
-        company: "Underdogs Arena",
-        address: "Kanpur, UP, India",
-        date: "May 2021 - Aug 2021",
-        icon: uda,
-        points: [
-            "Spearheaded the management of ongoing events on both our server and client servers, ensuring seamless execution and engaging experiences for the community.",
-            "Expertly handled opening and closing operations, as well as preopening and post-closing tasks, maintaining operational efficiency and a smooth workflow.",
-            "Played a pivotal role in customer support, providing immediate solutions to server member issues through proactive engagement via live chat and voice call support.",
-            "Guided and supported the team in delivering exceptional customer service, fostering a collaborative and solution-driven environment."
-        ]
-    },
-    {
         title: "Product Manager Intern",
         company: "Connexio Inc.",
         address: "St. Louis, MO, USA",

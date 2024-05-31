@@ -6,7 +6,6 @@ import SectionWrapper from './hoc/SectionWrapper';
 import { textVariant } from './utils/motion';
 
 import connexio from "../Assets/Company/connexio.jpg"
-import uda from "../Assets/Company/uda.jpg"
 import polstrat from "../Assets/Company/polstrat.png"
 import Certifications from './Certifications';
 

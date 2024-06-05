@@ -19,9 +19,46 @@ import openCV from "../Assets/tech/openCV.png"
 import mySQL from "../Assets/tech//mySQL.png"
 import pandas from "../Assets/tech/pandas.svg"
 import powerBI from "../Assets/tech/powerBI.png"
+import tableau from "../Assets/tech/tableau.png"
 
 const Skills = () => {
   const technologies = [
+    {
+      name: "Python",
+      icon: python,
+    },
+    {
+      name: "Numpy",
+      icon: numpy,
+    },
+    {
+      name: "Pandas",
+      icon: pandas,
+    },
+    {
+      name: "Tableau",
+      icon: tableau
+    },
+    {
+      name: "Power BI",
+      icon: powerBI,
+    },
+    {
+      name: "Open CV",
+      icon: openCV,
+    },
+    {
+      name: "mySQL",
+      icon: mySQL,
+    },
+    {
+      name: "AWS",
+      icon: aws,
+    },
+    {
+      name: "MongoDB",
+      icon: mongodb,
+    },
     {
       name: "HTML 5",
       icon: html,
@@ -51,10 +88,6 @@ const Skills = () => {
       icon: nodejs,
     },
     {
-      name: "MongoDB",
-      icon: mongodb,
-    },
-    {
       name: "Three JS",
       icon: threejs,
     },
@@ -69,34 +102,6 @@ const Skills = () => {
     {
       name: "Next JS",
       icon: nextjs,
-    },
-    {
-      name: "Python",
-      icon: python,
-    },
-    {
-      name: "Numpy",
-      icon: numpy,
-    },
-    {
-      name: "Pandas",
-      icon: pandas,
-    },
-    {
-      name: "Power BI",
-      icon: powerBI,
-    },
-    {
-      name: "Open CV",
-      icon: openCV,
-    },
-    {
-      name: "mySQL",
-      icon: mySQL,
-    },
-    {
-      name: "AWS",
-      icon: aws,
     },
   ];
 

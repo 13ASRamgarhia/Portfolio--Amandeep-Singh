@@ -10,6 +10,7 @@ import fullstack_linkedin from "../Assets/certifications/fullstack_linkedin.png"
 import js_intermediate from "../Assets/certifications/js inter.png"
 import oop_python from "../Assets/certifications/oop_python.png"
 import nosql from "../Assets/certifications/nosql.png"
+import dt from "../Assets/certifications/dt.png"
 
 const CertificationCard = ({ index, name, img, organization, date, credential }) => {
     return(
@@ -35,6 +36,13 @@ const CertificationCard = ({ index, name, img, organization, date, credential })
 
 const Certifications = () => {
     const certifications = [
+          {
+            name: "Python for Data Science",
+            img: dt,
+            date: "Jun 2024",
+            organization: "Infosys Springboard",
+            credential: "https://drive.google.com/file/d/1dFTY_Mwt4UeZMk9HDODK7yqdRLGIhwGf/view?usp=sharing"
+          },
           {
             name: "JavaScript (Intermediate)",
             img: js_intermediate,

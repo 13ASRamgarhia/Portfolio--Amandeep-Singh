@@ -51,9 +51,9 @@ const ProjectCard = ({ index, name, description, tags, image, source_code_link, 
 const Projects = () => {
   const projects = [
     {
-      name: "CineSense",
+      name: "Upload2Sketch",
       description:
-        "An AI-based Movie Recommendation System for a capestone project, developed using Python and React. The system delivers personalized movie suggestions based on user preferences.",
+        "An AI-powered tool that converts images to detailed pencil sketch. User can modify the sketch using various effect features in the tool.",
       tags: [
         {
           name: "python",
@@ -64,9 +64,9 @@ const Projects = () => {
           color: "text-violet-500",
         }
       ],
-      image: cinesense,
-      source_code_link: "https://github.com/13ASRamgarhia/Cine-Sense",
-      live_site_link: "https://cine-sense.netlify.app/"
+      image: skeleton,
+      source_code_link: "https://github.com/13ASRamgarhia/Upload2Sketch",
+      live_site_link: "https://boisterous-chaja-7e25f0.netlify.app/"
     },
     {
       name: "Image Manipulation",
@@ -120,35 +120,6 @@ const Projects = () => {
       source_code_link: "https://github.com/13ASRamgarhia/University-Scraper",
     },
     {
-      name: "Automated Attendence System",
-      description:
-        "Developed an automated attendance system using Python for marking attendance using its face recognition system. As named, the aim of this project was to develop an automated attendance system to save time and prevent corruption.",
-      tags: [
-        {
-          name: "python",
-          color: "text-yellow-500",
-        },
-        {
-          name: "numpy",
-          color: "text-yellow-300",
-        },
-        {
-          name: "mysql",
-          color: "text-blue-500",
-        },
-        {
-          name: "pillow",
-          color: "text-yellow-300",
-        },
-        {
-          name: "opencv-contrib-python",
-          color: "text-yellow-300",
-        },
-      ],
-      image: skeleton,
-      source_code_link: "https://github.com/13ASRamgarhia/Facial-Recognition-System",
-    },
-    {
       name: "WeatherSense",
       description:
         "WeatherSense is a weather app created using create-react-app, openWeatherMap API, and Tailwind CSS. The app can be used to fetch current weather for any city in the world. The amazing design and UX of the app makes it stand out.",
@@ -169,28 +140,6 @@ const Projects = () => {
       image: weathersense,
       source_code_link: "https://github.com/13ASRamgarhia/WeatherSense",
       live_site_link: "https://weather-sense.netlify.app/"
-    },
-    {
-      name: "Optic eSports - React app",
-      description:
-        "A web application developed using create-react-app and tailwind to for an (fake) esports organisation.",
-      tags: [
-        {
-          name: "react",
-          color: "text-blue-500",
-        },
-        {
-          name: "tailwind",
-          color: "text-pink-500",
-        },
-        {
-          name: "API",
-          color: "text-gray-500",
-        },
-      ],
-      image: opticesports,
-      source_code_link: "https://github.com/13ASRamgarhia/Optic-eSports",
-      live_site_link: "https://optic-esports.netlify.app/"
     },
     {
       name: "Random app",

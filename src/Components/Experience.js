@@ -50,27 +50,26 @@ const Experience = () => {
   const internships = [
     {
       title: "Data Analyst Intern",
-      company: "Polstrat Communications Pvt Ltd",
+      company: "Polstrat Communications Pvt Ltd, Noida, UP, India",
       address: "Noida, UP, India",
       date: "June 2023 - Nov 2023",
       icon: polstrat,
       points: [
-          "Applied statistical techniques and data mining to discern behavioral trends in electoral and demographic data.",
-          "Conducted in-depth analysis of large datasets, presenting actionable insights for strategic decision-making",
-          "Designed and developed interactive dashboards using Power BI, to visualize and communicate key data points effectively",
-          "Improved data collection techniques, implemented data mining methodologies, and provided recommendations influencing strategic business direction."
+          "Developed python scripts to automate the data extraction and data processing",
+          "Contributed to data management throughout the process",
+          "Created visual representations using Power BI to guide decision-making and gain insights"
       ]
     },
     {
         title: "Product Manager Intern",
-        company: "Connexio Inc.",
+        company: "Connexio Inc., St. Louis, MO, USA",
         address: "St. Louis, MO, USA",
         date: "Feb 2019 - Aug 2019",
         icon: connexio,
         points: [
-            "Executed web scraping techniques to extract pertinent data from the World Wide Web, ensuring the accuracy and relevance of information for the product.",
-            "Managed the extraction and processing of data to feed into the product, contributing to the creation of a comprehensive and userfriendly platform",
-            "Played a pivotal role in integrating data-driven features into the product, enhancing its functionality and value for users seeking personalized educational recommendations."
+            "Developed an automation model in Python to automate the data extraction process",
+            "Worked with Senior Developer to manage the huge datasets for the product",
+            "Worked as Student Ambassador at SAITM, Gurugram"
         ]
     },
   ]

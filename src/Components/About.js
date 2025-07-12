@@ -29,15 +29,15 @@ const About = () => {
       icon: creator,
     },
     {
-      title: "MERN Stack Developer",
+      title: "Business Analyst",
       icon: mobile,
     },
     {
-      title: "React Developer",
+      title: "AI Developer",
       icon: backend,
     },
     {
-      title: "Backend Developer",
+      title: "MERN Stack Developer",
       icon: web,
     },
   ];

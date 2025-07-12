@@ -3,16 +3,9 @@ import { Tilt } from 'react-tilt'
 import SectionWrapper from './hoc/SectionWrapper'
 import { Icon } from 'semantic-ui-react'
 
-import pepper from "../Assets/projects/pepper.png"
-import randomapp from "../Assets/projects/randomapp.png"
-import inotebook from "../Assets/projects/inotebook.png"
-import newssense from "../Assets/projects/newssense.png"
 import autobot from "../Assets/projects/autobot.webp"
 import skeleton from "../Assets/projects/skeleton.jpg"
-import opticesports from "../Assets/projects/opticesports.png"
-import weathersense from "../Assets/projects/weathersense.png"
 import image_mani from "../Assets/projects/image_mani.png"
-import cinesense from "../Assets/projects/cinesense.png"
 
 const ProjectCard = ({ index, name, description, tags, image, source_code_link, live_site_link }) => {
   return(

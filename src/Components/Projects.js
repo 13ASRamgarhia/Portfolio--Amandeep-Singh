@@ -137,7 +137,7 @@ const Projects = () => {
     {
       name: "WeatherSense",
       description:
-        "Machine Learning model classifies Sonar data, identifying objects as either Rock or Mine based on 60-dimensional sonar features"
+        "Machine Learning model classifies Sonar data, identifying objects as either Rock or Mine based on 60-dimensional sonar features",
       tags: [
         {
           name: "python",

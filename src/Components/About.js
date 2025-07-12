@@ -51,7 +51,7 @@ const About = () => {
       </motion.div>
 
       <motion.p variants={fadeIn('', '', 0.1, 1)} className='text-tSecondary max-w-4xl leading-7 tracking-wider mt-4 text-xl text-justify'>
-      Currently pursuing a Graduate Certificate in Artificial Intelligence, I am a graduate of BTech Computer Science & Engineering with over two years of programming experience. Competent with a wide range of technological stacks and computer languages, including MySQL, Excel, Python, and MERN Stack.
+      Data Analyst skilled in Python, SQL, and AI, with hands-on experience in end-to-end data lifecycle management, from extraction and processing to advanced analytics and visualization. Proven ability to translate complex datasets into actionable insights, optimize workflows, and build innovative, data-driven solutions for business impact. Seeking to leverage expertise in AI and data analytics to drive strategic decision-making.
       </motion.p>
 
       <div className="mt-20 flex flex-wrap gap-10 justify-center">

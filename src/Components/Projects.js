@@ -100,7 +100,7 @@ const Projects = () => {
         },
       ],
       image: autobot,
-      source_code_link: "https://github.com/13ASRamgarhia/Cine-Sense",
+      source_code_link: "https://github.com/13ASRamgarhia/AutoBot",
     },
     {
       name: "Web Scraper",
@@ -128,7 +128,7 @@ const Projects = () => {
       source_code_link: "https://github.com/13ASRamgarhia/University-Data-Web-Scraper",
     },
     {
-      name: "WeatherSense",
+      name: "SONAR Data Classifier",
       description:
         "Machine Learning model classifies Sonar data, identifying objects as either Rock or Mine based on 60-dimensional sonar features",
       tags: [

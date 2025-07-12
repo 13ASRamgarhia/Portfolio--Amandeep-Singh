@@ -55,9 +55,10 @@ const Experience = () => {
       date: "June 2023 - Nov 2023",
       icon: polstrat,
       points: [
-          "Developed python scripts to automate the data extraction and data processing",
-          "Contributed to data management throughout the process",
-          "Created visual representations using Power BI to guide decision-making and gain insights"
+          "Worked on a project “Electoral Roll”, where aim was to analyze past elections and predict win rate for clients. Performed practices including Sentiment Analysis, Predictive and Descriptive Analysis",
+          "Extracting data by executing Web Scraping techniques along with OpenCV and MS Excel",
+          "Responsible for analyzing the data pulled from databases and creating reports on MS Excel and visualizations on Power BI and Tableau",
+          "Responsible for Automating data extraction and data processing processes using Python scripting"
       ]
     },
     {
@@ -67,9 +68,9 @@ const Experience = () => {
         date: "Feb 2019 - Aug 2019",
         icon: connexio,
         points: [
-            "Developed an automation model in Python to automate the data extraction process",
-            "Worked with Senior Developer to manage the huge datasets for the product",
-            "Worked as Student Ambassador at SAITM, Gurugram"
+            "Developed python scripts to automate the Data Extraction process, leading to time to time updated and improved dataset for the product",
+            "Assisted with product needs and resolved problems to maintain business relationships",
+            "Implemented Agile methodologies to streamline processes and improve overall team efficiency in product development cycles"
         ]
     },
   ]

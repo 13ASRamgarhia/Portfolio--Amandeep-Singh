@@ -59,7 +59,7 @@ const Landing = () => {
                   <p className="font-inter font-bold text-5xl text-tPrimary">Amandeep Singh</p>
                 </div>
                 <div>
-                  <p className="font-inter text-xl laptop:pr-10 intro leading-7 text-tSecondary" style={{textShadow: "0px 0px 14px rgba(0,0,0,1)"}}>Data Analyst and Full Stack Developer skilled in Python, AI, and Web technologies. I develop AI models , backend servers, user interfaces, and 3D visuals</p>
+                  <p className="font-inter text-xl laptop:pr-10 intro leading-7 text-tSecondary" style={{textShadow: "0px 0px 14px rgba(0,0,0,1)"}}>Data Analyst skilled in Python, SQL, and AI, with hands-on experience in end-to-end data lifecycle management, adept at translating complex datasets into actionable insights and building innovative, data-driven solutions</p>
                 </div>
                 <div className='flex flex-col laptop:flex laptop:flex-row my-auto space-x-0 laptop:space-x-4 space-y-4 laptop:space-y-0'>
                     <a href={resume} download className='bg-[#6e2f8a] w-fit flex my-auto px-4 py-3 font-monserrat hover:text-current text-tPrimary focus:text-current rounded-lg hover:bg-transparent border border-[#6e2f8a] hover:transition-all hover:duration-300'>Get resume</a>

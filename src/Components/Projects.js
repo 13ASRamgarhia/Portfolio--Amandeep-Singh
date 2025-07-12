@@ -51,35 +51,42 @@ const ProjectCard = ({ index, name, description, tags, image, source_code_link, 
 const Projects = () => {
   const projects = [
     {
-      name: "Upload2Sketch",
+      name: "Sentiment Analysis ML model",
       description:
-        "An AI-powered tool that converts images to detailed pencil sketch. User can modify the sketch using various effect features in the tool.",
+        "Sentiment Analysis machine learning model built with an LSTM neural network, trained on 50,000 IMDb movie reviews.",
       tags: [
         {
           name: "python",
           color: "text-yellow-500",
         },
         {
-          name: "react",
+          name: "machine learning",
           color: "text-violet-500",
         }
       ],
       image: skeleton,
-      source_code_link: "https://github.com/13ASRamgarhia/Upload2Sketch",
-      live_site_link: "https://boisterous-chaja-7e25f0.netlify.app/"
+      source_code_link: "https://github.com/13ASRamgarhia/Sentiment-Analysis---ML-Script/tree/main",
     },
     {
-      name: "Image Manipulation",
+      name: "Air Quality Analysis and Prediction",
       description:
-        "This python project automates the extraction of data from electoral roll images by isolating individual citizen information. The script then cleans and converts each image to text (able to convert image to text in 5 languages), generating a CSV file with the resultant data.",
+        "ML-based model to predict future air quality and analysis report on Power BI. Collected data using web scraping. Performed feature engineering and exploratory data analysis. Used Random Forest Regressor to predict Air Quality Index.",
       tags: [
         {
           name: "python",
           color: "text-yellow-500",
         },
+        {
+          name: "machine learning",
+          color: "text-yellow-500",
+        },
+        {
+          name: "power bi",
+          color: "text-green-500",
+        },
       ],
       image: image_mani,
-      source_code_link: "https://github.com/13ASRamgarhia/Image-Manipulation-Project"
+      source_code_link: "https://github.com/13ASRamgarhia"
     },
     {
       name: "AUTOBOT [discord AUTO-moderation BOT]",
@@ -90,14 +97,22 @@ const Projects = () => {
           name: "python",
           color: "text-yellow-500",
         },
+                {
+          name: "python automation",
+          color: "text-yellow-500",
+        },
+                {
+          name: "discord.py",
+          color: "text-yellow-500",
+        },
       ],
       image: autobot,
       source_code_link: "https://github.com/13ASRamgarhia/Cine-Sense",
     },
     {
-      name: "University (Web) Scraper",
+      name: "Web Scraper",
       description:
-        "This is the very first version of Web Scraper which was developed during my internship at Connexio Inc. The project was developed for extracting the required data for the app.",
+        "A Python-based web scraper designed to extract information about universities from the internet. The extracted data is then compiled into a CSV file for easy analysis and use.",
       tags: [
         {
           name: "python",
@@ -108,151 +123,59 @@ const Projects = () => {
           color: "text-yellow-300",
         },
         {
-          name: "scrapy",
+          name: "web scraping",
           color: "text-yellow-300",
         },
         {
-          name: "selenium",
+          name: "drissionpage",
           color: "text-yellow-300",
         },
       ],
       image: skeleton,
-      source_code_link: "https://github.com/13ASRamgarhia/University-Scraper",
+      source_code_link: "https://github.com/13ASRamgarhia/University-Data-Web-Scraper",
     },
     {
       name: "WeatherSense",
       description:
-        "WeatherSense is a weather app created using create-react-app, openWeatherMap API, and Tailwind CSS. The app can be used to fetch current weather for any city in the world. The amazing design and UX of the app makes it stand out.",
+        "Machine Learning model classifies Sonar data, identifying objects as either Rock or Mine based on 60-dimensional sonar features"
       tags: [
         {
-          name: "react",
+          name: "python",
           color: "text-blue-500",
         },
         {
-          name: "tailwind",
-          color: "text-pink-500",
+          name: "machine learning",
+          color: "text-yellow-500",
         },
         {
-          name: "API",
+          name: "data analysis",
           color: "text-gray-500",
         },
-      ],
-      image: weathersense,
-      source_code_link: "https://github.com/13ASRamgarhia/WeatherSense",
-      live_site_link: "https://weather-sense.netlify.app/"
-    },
-    {
-      name: "Random app",
-      description:
-        "A simple web application developed using create-react-app and tailwind to get users from an API",
-      tags: [
-        {
-          name: "react",
-          color: "text-blue-500",
-        },
-        {
-          name: "tailwind",
-          color: "text-pink-500",
-        },
-        {
-          name: "API",
-          color: "text-gray-500",
-        },
-      ],
-      image: randomapp,
-      source_code_link: "https://github.com/13ASRamgarhia/Random-app",
-      live_site_link: "https://random-react-application.netlify.app/"
-    },
-    {
-      name: "Pepper clone",
-      description:
-        "A single page application developed using React and Tailwind, cloning a popular website - Pepper. Project was developed for learning purposes",
-      tags: [
-        {
-          name: "react",
-          color: "text-blue-500",
-        },
-        {
-          name: "tailwind",
-          color: "text-pink-500",
-        },
-      ],
-      image: pepper,
-      source_code_link: "https://github.com/13ASRamgarhia/Pepper---Frontend-Development",
-      live_site_link: "https://pepper-frontend-project.netlify.app/"
-    },
-    {
-      name: "iNotebook",
-      description:
-        "iNotebook is a React app which is developed using MERN Technologies. This is a cloud notebook app, which can be accessed by a device with internet connection. This app is using MongoDB to store the user data and their notes. User can add a new note and delete a note.",
-      tags: [
-        {
-          name: "react",
-          color: "text-blue-500",
-        },
-        {
-          name: "tailwind",
-          color: "text-pink-500",
-        },
-        {
-          name: "node.js",
-          color: "text-green-500",
-        },
-        {
-          name: "mongoDB",
-          color: "text-green-500",
-        },
-        {
-          name: "REST API",
-          color: "text-gray-500",
-        },
-      ],
-      image: inotebook,
-      source_code_link: "https://github.com/13ASRamgarhia/iNotebook-frontend--MERN-Stack",
-      live_site_link: "https://inotebook-cloud-notebook-app.netlify.app/"
-    },
-    {
-      name: "Notes app",
-      description:
-        "Notes is a React app which is developed using MERN Technologies. This is a cloud notebook app, which can be accessed by a device with internet connection. This app is using MySQL to store the user data and their notes. User can add a new note, edit an existing note, and delete a note.",
-      tags: [
-        {
-          name: "react",
-          color: "text-blue-500",
-        },
-        {
-          name: "tailwind",
-          color: "text-pink-500",
-        },
-        {
-          name: "mySQL",
-          color: "text-blue-500",
-        },
-        {
-          name: "node.js",
-          color: "text-green-500",
-        }
       ],
       image: skeleton,
-      source_code_link: "https://github.com/13ASRamgarhia/Notes-frontend",
+      source_code_link: "https://github.com/13ASRamgarhia/Sonar-Data-Classifier",
+      live_site_link: "https://sonar-data-classifier.streamlit.app/"
     },
     {
-      name: "NewSense",
+      name: "Amazon Sales Data Analysis 2023",
       description:
-        "NewsSense is a web application which can be used to grab quick daily news bites. One can use NewsSense to read news for 17 different countries and for 7 various categories.",
+        "Data Analysis project for analyzing and gaining insights from Amazon website sales in year 2023, and visualizing the gained insights using Tableau",
       tags: [
         {
-          name: "react",
+          name: "python",
           color: "text-blue-500",
         },
         {
-          name: "REST API",
+          name: "data analysis",
+          color: "text-pink-500",
+        },
+        {
+          name: "API",
           color: "text-gray-500",
-        }
+        },
       ],
-      image: newssense,
-      source_code_link: "https://github.com/13ASRamgarhia/NewSense",
-      live_site_link: "https://news-sense.netlify.app/"
+      image: skeleton,
+      live_site_link: "https://github.com/13ASRamgarhia/Amazon-Sales-Analysis"
     },
   ];
 

@@ -68,9 +68,9 @@ const Experience = () => {
         date: "Feb 2019 - Aug 2019",
         icon: connexio,
         points: [
-            "Developed customer-centric web applications using Django, PostgreSQL, and JavaScript, reducing immigration logistics management time by 40%"
-            "Built and optimized Django models, views, templates, and ORM queries, improving application performance and data handling"
-            "Automated deployments with GitLab CI/CD and Docker and deployed containerized applications on AWS, reducing deployment time by 50%"
+            "Developed customer-centric web applications using Django, PostgreSQL, and JavaScript, reducing immigration logistics management time by 40%",
+            "Built and optimized Django models, views, templates, and ORM queries, improving application performance and data handling",
+            "Automated deployments with GitLab CI/CD and Docker and deployed containerized applications on AWS, reducing deployment time by 50%",
             "Implemented secure authentication using OAuth 2.0 and Amazon Cognito, and improved reliability through pytest/playwright testing, documentation, and code reviews, reducing bugs by 60%"
         ]
     },

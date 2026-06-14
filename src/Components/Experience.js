@@ -49,28 +49,29 @@ const InternshipCard = ({ internship }) => {
 const Experience = () => {
   const internships = [
     {
-      title: "Data Analyst Intern",
+      title: "Data Analyst",
       company: "Polstrat Communications Pvt Ltd, Noida, UP, India",
       address: "Noida, UP, India",
-      date: "June 2023 - Nov 2023",
+      date: "Dec 2022 - Nov 2023",
       icon: polstrat,
       points: [
-          "Worked on a project “Electoral Roll”, where aim was to analyze past elections and predict win rate for clients. Performed practices including Sentiment Analysis, Predictive and Descriptive Analysis",
-          "Extracting data by executing Web Scraping techniques along with OpenCV and MS Excel",
-          "Responsible for analyzing the data pulled from databases and creating reports on MS Excel and visualizations on Power BI and Tableau",
-          "Responsible for Automating data extraction and data processing processes using Python scripting"
+          "Analyzed large datasets to support trend analysis, forecasting, and data-driven decision-making for internal stakeholders",
+          "Automated data extraction and preprocessing pipelines using Python, improving team operational efficiency by ~80%",
+          "Built centralized data servers and structured datasets to enable quick access to project data across teams",
+          "Optimized automation scripts to reduce data processing time by up to 75%, significantly accelerating reporting workflows"
       ]
     },
     {
-        title: "Product Manager Intern",
+        title: "Software Engineer (Contractual)",
         company: "Connexio Inc., St. Louis, MO, USA",
         address: "St. Louis, MO, USA",
         date: "Feb 2019 - Aug 2019",
         icon: connexio,
         points: [
-            "Developed python scripts to automate the Data Extraction process, leading to time to time updated and improved dataset for the product",
-            "Assisted with product needs and resolved problems to maintain business relationships",
-            "Implemented Agile methodologies to streamline processes and improve overall team efficiency in product development cycles"
+            "Developed customer-centric web applications using Django, PostgreSQL, and JavaScript, reducing immigration logistics management time by 40%"
+            "Built and optimized Django models, views, templates, and ORM queries, improving application performance and data handling"
+            "Automated deployments with GitLab CI/CD and Docker and deployed containerized applications on AWS, reducing deployment time by 50%"
+            "Implemented secure authentication using OAuth 2.0 and Amazon Cognito, and improved reliability through pytest/playwright testing, documentation, and code reviews, reducing bugs by 60%"
         ]
     },
   ]
